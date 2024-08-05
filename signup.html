@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3d4d1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+        .container {
+            background-color: #f3d4d1;
+            padding: 20px;
+            border-radius: 10px;
+           
+            display: flex;
+            max-width: 1200px;
+            max-height: 700px;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .image-section {
+            flex: 1;
+            background-image: url(./Clip\ path\ group.png);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px 0 0 10px;
+            padding: 5px;
+            position: relative;
+            margin-right: 5%;
+        }
+        .form-section {
+            flex: 1;
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: #f5efee;
+            border-radius: 5%;
+            position: relative;
+        }
+        .form-section h2 {
+            margin: 0 0 20px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .required {
+            color: red !important;
+        }
+        .form-group img {
+            float: right;
+            margin-top: -35px;
+            margin-right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+        .decorative-image {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .bottom-decorative-image {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        .btn {
+            display: block;
+            background-color: #800000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin: 20px auto 0;
+        }
+        .form-group input[type="radio"] {
+            margin-left: 5px;
+        }
+    </style>
+    <script>
+        function validatePassword() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirm-password").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+</head>
+<body>
+    <img src="./corner.png" alt="Decorative Image" class="decorative-image">
+<div class="container">
+    <div class="image-section">
+        <!-- You can replace this section with an actual image if needed -->
+    </div>
+    <div class="form-section">
+        <h2>Signup</h2>
+        <form action="logintp.html" onsubmit="return validatePassword()">
+            <div class="form-group">
+                <label for="Name">Name <span class="required">*</span></label>
+                <input type="text" id="Name" name="Name" required>
+            </div>
+            <div>
+                <label for="Gender">Gender <span class="required">*</span></label><br>
+                <label for="Male">Male</label>
+                <input type="radio" id="Male" value="Male" name="Gender" required>
+                <label for="Female">Female</label>
+                <input type="radio" id="Female" value="Female" name="Gender" required>
+                <label for="Other">Other</label>
+                <input type="radio" id="Other" value="Other" name="Gender" required>
+            </div><br>
+            <div class="form-group">
+                <label for="mobile">Mobile No. <span class="required">*</span></label>
+                <input type="tel" id="mobile" name="mobile" required maxlength="10" minlength="10" pattern="[0-9]*">
+                
+            </div>
+            <div class="form-group">
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required>
+                <img src="path/to/your/icon3.png" alt="icon">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password <span class="required">*</span></label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <img src="path/to/your/icon4.png" alt="icon">
+            </div>
+            <button type="submit" class="btn" name="submit button">Signup</button>
+        </form>
+    </div>
+</div>
+<img src="./bottom.png" alt="Bottom Decorative Image" class="bottom-decorative-image">
+</body>
+</html>

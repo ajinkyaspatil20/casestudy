@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="appoinment1.css" />
+    <link rel="stylesheet" href="appoinment2.css" />
+   
+  </head>
+  <body>
+    <div class="appointement">
+      <main class="app-structure">
+        <header class="frame-parent">
+          <div class="salon-wrapper">
+            <h2 class="salon"></h2>
+          </div>
+          <img
+            class="screenshot-2024-06-13-130902-r-icon"
+            loading="lazy"
+            alt=""
+            src="Group 2.png"
+          />
+
+          <nav class="home-services-appointments-tit-parent">
+            <div class="home-services-appointments-tit">
+              <a href="home" class="home">HOME</a>
+              
+            </div>
+            <div class="home-services-appointments-tit1">
+              <a href="services-appointments" class="services-appointments">SERVICES & APPOINTMENTS</a>
+            </div>
+            <div class="products-outlets-title-wrapper">
+              <div class="products-outlets-title">
+                <a href="products" class="products">PRODUCTS</a>
+                <a href="OUTLETS" class="outlets">OUTLETS</a>
+              </div>
+            </div>
+            <!-- <button class="vector-parent"> -->
+              <!-- <img
+                class="frame-child"
+                alt=""
+                src="./public/rectangle-437.svg"
+              /> -->
+
+              <!-- <a class="login">LOGIN</a> -->
+              <a href="logintp.html" class="login">
+                <button class="vector-parent">
+                  <span class="login">LOGIN</span>
+                </button>
+              </a>
+              
+            <!-- </button> -->
+          </nav>
+        </header>
+        <section class="app-structure-inner">
+          <div class="rectangle-parent">
+            <div class="frame-item"></div>
+            <div class="get-an-estimate-for-workspace-wrapper">
+              <h1 class="get-an-estimate">Get an Estimate for Workspace</h1>
+            </div>
+            <div class="frame-group">
+              <div class="frame-container">
+                <div class="vector-wrapper">
+                  <!-- <img
+                    class="frame-inner"
+                    loading="lazy"
+                    alt=""
+                    src="./public/line-133.svg"
+                  /> -->
+                </div>
+                <div class="your-requirements-wrapper">
+                  <b class="your-requirements">Your Requirements</b>
+                </div>
+                <div class="outlet-input-wrapper">
+                  <div class="outlet-input">
+                    <div class="outlet">Outlet</div>
+                    <select class="outlet-input-child">
+                      <option value="">Select City/Area</option>
+                      <option value="thane">Thane</option>
+                      <option value="pune">Pune</option>
+                      <option value="mumbai">Mumbai</option>
+                      <option value="bandra">Bandra</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-wrapper">
+                <div class="frame-div">
+                  <div class="type-service-input-wrapper">
+                    <div class="type-service-input">
+                      <div class="frame-parent1">
+                        <div class="type-of-service-parent">
+                          <div class="type-of-service">Type Of Service</div>
+                          <input class="rectangle-input" type="text" placeholder="Event Space" />
+                        </div>
+                        <div class="check-in-parent">
+                          <div class="check-in">Check In</div>
+                          <div class="">
+                            <input class="rectangle-input" type="date" placeholder="dd-mm-yyyy" onfocus="this.showPicker()" />
+                            <div class="date-input-child"></div>
+                          </div>
+                        </div>
+                        <div class="any-specific-preferences-parent">
+                          <div class="any-specific-preferences">Any specific preferences</div>
+                          <input class="rectangle-input" type="text" placeholder="Yes/No" id="preferences" oninput="toggleTextarea()" />
+                        </div>
+                      </div>
+                      <div class="submit-button-wrapper">
+                        <a href="index.html" class="back-button">
+                          <button class="submit-button" type="button">
+                            <div class="button-text">Back</div>
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="package-input-parent">
+                    <div class="package-input">
+                      <div class="type-of-packages">Type Of Packages</div>
+                      <select class="package-input-child">
+                        <option value="">Choose Package</option>
+                        <option value="999">₹999</option>
+                        <option value="1599">₹1599</option>
+                        <option value="2999">₹2999</option>
+                      </select>
+                    </div>
+                    <div class="package-details">
+                      <textarea
+                        class="package-instructions"
+                        placeholder="Please mention here..."
+                        rows="5"
+                        cols="16"
+                        required
+                        id="specific-preferences"
+                        disabled
+                      ></textarea>
+                      <div class="button-container">
+                        <div class="button-container">
+                            <!-- <button class="btn"> -->
+                              <buttonclass="btn" onclick="submitForm()"></button>
+                              <b class="btn" style="color: white;font-family: 'Times New Roman', Times, serif;">Submit</b>
+                            </button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="message" class="hidden message"></div>
+          </div>
+        </section>
+      </main>
+      <img class="salon-ams-1-icon" alt="" src="bg1.png" />
+
+      <img class="appointement-child" alt="" src="Rectangle 4.png"/>
+
+      <div class="event-space"> </div>
+      <!-- <img
+        class="event-space-item"
+        loading="lazy"
+        alt=""
+        src="./public/vector-2.svg"
+      /> -->
+
+      <div class="event-space1"> </div>
+      <!-- <img
+        class="event-space-item1"
+        loading="lazy"
+        alt=""
+        src="./public/vector-3.svg"
+      /> -->
+
+      <div class="cityarea"> </div>
+      <!-- <img
+        class="event-space-item2"
+        loading="lazy"
+        alt=""
+        src="./public/vector-4.svg"
+      /> -->
+
+      <!-- <img
+        class="event-space-item3"
+        loading="lazy"
+        alt=""
+        src="./public/vector-5.svg"
+      /> -->
+
+      <div class="appointement-item"></div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="line-parent">
+            <div class="line-div"></div>
+            <div class="frame-child1"></div>
+          </div>
+          <div class="wrapper">
+            <h1 class="h1">&gt;</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function submitForm() {
+        const packageInput = document.querySelector('.package-input-child').value;
+        const instructions = document.querySelector('.package-instructions').value;
+
+        if (packageInput.trim() === '' || instructions.trim() === '') {
+          alert('Please fill in all fields.');
+          return;
+        }
+
+        document.getElementById('message').textContent = 'Your appointment is in process. Thank you!';
+        document.getElementById('message').classList.remove('hidden');
+        setTimeout(() => {
+      window.location.href = 'index.html';
+    }, 3000);
+  }
+  function toggleTextarea() {
+        const preferences = document.getElementById('preferences').value.toLowerCase();
+        const textarea = document.getElementById('specific-preferences');
+
+        if (preferences === 'yes') {
+          textarea.disabled = false;
+        } else {
+          textarea.disabled = true;
+          textarea.value = ''; // Clear the textarea if "No" is selected
+        }
+      }
+        // document.querySelector('.package-input-child').value = '';
+        // document.querySelector('.package-instructions').value = '';
+
+      
+
+    </script>
+  </body>
+</html>
